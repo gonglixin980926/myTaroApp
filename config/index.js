@@ -45,8 +45,10 @@ const config = {
       chain.merge({
         module: {
           rule: {
-            test: /\.svga$/,
-            use: ['svga-loader'],
+            svgaLoader: {
+                test: /\.svga$/,
+                use: ['svga-loader'],
+              },
           },
         },
       });
